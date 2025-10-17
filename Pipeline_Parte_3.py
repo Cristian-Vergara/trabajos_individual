@@ -34,6 +34,7 @@ except SQLAlchemyError as e:
 st.write("### puedes cambiar los datos directamente de la tabla:")
 edited_df = st.data_editor(df, num_rows="dynamic", use_container_width=True)
 
+
 # Botón para guardar cambios en la base de datos
 if st.button("Guardar cambios en PostgreSQL"):
     try:
